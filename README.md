@@ -1,22 +1,18 @@
+> [!CAUTION]
+> This project is still under development and may not be fully functional as described (yet probably usable).
+
 # Face Recognition System
 
-A real-time face recognition system built in Python using OpenCV and modern computer vision techniques.
+Learning through building a live face recognition system. The project is expected to reach the following functionality and features. Always check the status section above to learn about the project's development stage.
 
 ## Features
 
-- Live webcam feed
-- Face detection
-- Face recognition
-- Real-time bounding boxes
-- Future AI security camera features
+- Live webcam output
+- Face detection & recognition
+- Real-time boxes marking detected faces
 
-## Technologies
+## This project uses
 
 - Python
 - OpenCV
 - NumPy
-- face_recognition / dlib (planned)
-
-## Status
-
-🚧 Work in progress - Contributions Welcome
