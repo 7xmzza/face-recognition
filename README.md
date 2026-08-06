@@ -16,3 +16,6 @@ Learning through building a live face recognition system. The project is expecte
 - Python
 - OpenCV
 - NumPy
+
+## Contributions
+Contributions are welcome and encouraged
