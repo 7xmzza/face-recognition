@@ -11,6 +11,20 @@ Learning through building a live face recognition system. The project is expecte
 - Face detection & recognition
 - Real-time boxes marking detected faces
 
+## How to use
+1. Clone the repo: 
+  ```git clone https://github.com/7xmzza/face-recognition.git```
+
+2. Create and activate venv and install dependencies:
+```
+python -m venv .venv
+.venv/Scripts/activate
+pip install -r requirements.txt
+```
+
+3. Run detect_face.py
+   
+
 ## This project uses
 
 - Python
