@@ -15,7 +15,7 @@ while True:
     frame = cv2.flip(frame, 1)
 
     if not ret:
-        print("cannot receive frame")
+        print("Cannot receive frame")
         break
 
 
@@ -26,7 +26,7 @@ while True:
             x, y, w, h = map(int, face[0:4])
             cv2.rectangle(frame, (x, y), (x + w, y + h), (0,255,0), 2)
 
-    cv2.imshow('yalahwiiiii', frame)
+    cv2.imshow('Face detection', frame)
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
 
