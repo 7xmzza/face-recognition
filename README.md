@@ -3,7 +3,7 @@
 
 # Face Recognition System
 
-Learning through building a live face recognition system. The project is expected to reach the following functionality and features. Always check the status section above to learn about the project's development stage.
+Learning through building a live face recognition system. The project is expected to reach the following functionality and features. Always check the status section below to learn about the project's development stage.
 
 ## Current state and features
 - Live face detection, not recognition yet
