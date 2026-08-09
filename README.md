@@ -5,11 +5,19 @@
 
 Learning through building a live face recognition system. The project is expected to reach the following functionality and features. Always check the status section above to learn about the project's development stage.
 
-## Features
+## Current state and features
+- Live face detection, not recognition yet
+- Uses YuNet face detection DNN model (instead of the previous Haar Cascade)
+- Uses OpenCV default resolution 640x480
+- Green box drawn around detected face
+
+
+## Expected features
 
 - Live webcam output
 - Face detection & recognition
 - Real-time boxes marking detected faces
+- Labeling faces based on dataset encodings
 
 ## How to use
 1. Clone the repo: 
@@ -22,7 +30,7 @@ python -m venv .venv
 pip install -r requirements.txt
 ```
 
-3. Run detect_face.py
+3. Run `detect_face.py`
    
 
 ## This project uses
