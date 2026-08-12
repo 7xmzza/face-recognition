@@ -32,7 +32,7 @@ while True:
             for encoding in os.listdir("encodings"):
                 score = recognizer.match(feature, np.load(f"encodings/{encoding}"), cv2.FaceRecognizerSF_FR_COSINE)
                 if score > 0.7:
-                    print("Safe face")
+                    print("Recognized face")
             x, y, w, h = map(int, face[0:4])
             cv2.rectangle(frame, (x, y), (x + w, y + h), (0,255,0), 2)
 
