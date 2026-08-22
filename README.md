@@ -9,21 +9,20 @@ The system detects faces from a webcam feed, generates facial feature embeddings
 - 🎥 Real-time webcam face detection
 - 🧠 YuNet DNN face detection
 - 👤 SFace face recognition
-- 📸 Multiple reference images per person
+- 📸 Uses multiple reference images per person
 - ⚡ Encodings loaded into memory before recognition
 - 🎯 Configurable recognition threshold
 - 🖥️ Live bounding boxes and name labels
 
 ## 🛠️ Tech Stack
 
-| Technology | Purpose |
+| Technology | Usage |
 |---|---|
-| Python | Core programming language |
-| OpenCV | Computer vision and webcam processing |
-| YuNet | Face detection |
-| SFace | Face recognition |
+| Python | Programming language |
+| OpenCV | Computer vision and webcam library |
+| YuNet | Face detection model |
+| SFace | Face recognition model |
 | NumPy | Facial feature storage and processing |
-| ONNX | Model format |
 
 ## 🧠 How It Works
 
@@ -31,7 +30,7 @@ The project is divided into two main stages:
 
 ### 1. Encoding Generation
 
-Reference images are organized into folders by person:
+Reference images are organized into folders by person (image naming doesn't matter):
 
 ```text
 known_faces/
@@ -182,13 +181,13 @@ For best results, use clear images where the person's face is visible.
 
 ### Generate Encodings
 
-Run the encoding-generation script:
+Run the encoding-generation script but make sure to change the `ENCODING_FOLDER_PATH` and the `DATASET_FOLDER_PATH` variables to desired relative path according to project structure:
 
 ```bash
 python create_encodings.py
 ```
 
-The generated facial feature vectors will be stored in the `encodings/` directory.
+The generated facial feature vectors will be stored in the `ENCODING_FOLDER_PATH` variable directory.
 
 ### Start Recognition
 
@@ -222,17 +221,6 @@ if score > 0.7:
 Increasing the threshold makes recognition more strict.
 
 Decreasing it makes recognition more permissive.
-
-## 🔮 Future Improvements
-
-- [ ] Improve identity matching by aggregating scores across multiple reference images
-- [ ] Add explicit `Unknown` classification
-- [ ] Add face tracking between frames
-- [ ] Improve recognition stability across consecutive frames
-- [ ] Add configurable detection and recognition thresholds
-- [ ] Add command-line configuration
-- [ ] Improve dataset validation
-- [ ] Optimize recognition for larger datasets
 
 ## 📜 License
 

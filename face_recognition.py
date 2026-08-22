@@ -113,7 +113,7 @@ try:
                             )
 
         cv.imshow(
-            "Face detection and recognition - Hamza ElNahtawy",
+            "Face detection and recognition by Hamza ElNahtawy",
             frame,
         )
 

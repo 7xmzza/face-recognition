@@ -7,8 +7,8 @@ import numpy as np
 DETECTOR_PATH = "weights/face_detection_yunet_2026may.onnx"
 RECOGNIZER_PATH = "weights/face_recognition_sface_2021dec.onnx"
 
-DATASET_FOLDER_PATH = "production_material/test_images"
-ENCODING_FOLDER_PATH = "production_material/test_encodings"
+DATASET_FOLDER_PATH = "known_faces"
+ENCODING_FOLDER_PATH = "encodings"
 
 
 detector = cv.FaceDetectorYN.create(
